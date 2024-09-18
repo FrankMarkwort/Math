@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Math\Bin;
 
-use Exception;
 use Math\MathException;
 
 class BinDec
