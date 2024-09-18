@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Math\Skalar;
 
-use Exception;
 use Math\AbstractAngleRad;
 use Math\EnumRange;
+use Math\MathException;
 
 class Rad extends AbstractAngleRad
 {
@@ -15,10 +15,10 @@ class Rad extends AbstractAngleRad
     }
 
     /**
-     * @throws Exception
+     * @throws MathException
      */
     public function rotate(float $rad): Rad
     {
-        throw new Exception('not implemented');
+        throw new MathException('Rad::rotate is not implemented');
     }
 }

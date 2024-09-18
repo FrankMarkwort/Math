@@ -2,7 +2,7 @@
   "name": "poseidon2/math",
   "description": "Math-Vector library",
   "minimum-stability": "stable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "library",
   "authors": [
         {
@@ -26,6 +26,7 @@
         }
     },
     "require": {
-      "php": ">= 8.3"
+      "php": ">= 8.3",
+      "ext-bcmath": "*"
     }
 }

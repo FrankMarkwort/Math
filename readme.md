@@ -37,5 +37,7 @@ $vector2 = (new Math\Vector\PolarVector())->setR(20)->setOmega( pi() / 2 );
 $vectorOperation = new Math\Vector\PolarVectorOperation()
 $vector3 = $vectorOperation($vector1, $vector2, Math\Vector\Operator::PLUS, Math\EnumRange::G180);
 
+# Bin
+$int = Math\Bin\BinDec::bin2dec('101000101', false, 1);
 
 ```
