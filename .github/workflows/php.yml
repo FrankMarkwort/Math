@@ -24,5 +24,6 @@ jobs:
         with:
           version: 11.3.5
           php_version: 8.3
+          php_extensions: bcmath
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
