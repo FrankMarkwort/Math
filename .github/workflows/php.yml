@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
+      - name: Install deps
+        run: |
+          sudo apt-get install -y php-bcmath
       - name: Composer    
         uses: php-actions/composer@v6
         with:
