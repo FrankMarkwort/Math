@@ -5,21 +5,12 @@ on: [push]
 jobs:
   build-test:
     runs-on: ubuntu-24.04
-
     steps:
       - uses: actions/checkout@v3
-      - name: Install deps
-        run: |
-          sudo apt-get install -y php-bcmath
-          sudo apt-get install -y libmemcached-dev zlib1g-dev libssl-dev
-          sudo apt-get install -y php-memcached
-      - name: Install service memcached
-        uses: niden/actions-memcached@v7
       - name: Composer    
         uses: php-actions/composer@v6
         with:
           php_version: "8.3"
-          php_extensions: memcached bcmath sockets
           version: latest
        
       - name: PHPUnit Tests
@@ -29,6 +20,5 @@ jobs:
         with:
           version: 11.0
           php_version: 8.3
-          php_extensions: bcmath memcached
           bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
