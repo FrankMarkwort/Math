@@ -1,8 +1,9 @@
 {
   "name": "poseidon2/math",
-  "description": "Math vector",
+  "description": "Math-Vector library",
   "minimum-stability": "stable",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "type": "library",
   "authors": [
         {
             "name": "Frank Markwort",
